@@ -35,4 +35,5 @@ This is a cloud-based data streaming solution for multi-region sales data.
 12. Execution processes/threads: 1,024
 
 ## Assumptions
-1. 
+1. Amazon Kinesis Data Stream has already been created and configured.
+
