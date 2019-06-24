@@ -50,8 +50,8 @@ This is a cloud-based data streaming solution for multi-region sales data.
    - Create python file called called **_push_data.py_**
    - Copy and paste code in _/PopulateKinesisFirehose/push_data.py_ to the file
 
-## Limitations (AWS Lambda)
-1.  The python program used to preprocess data before pushing to kinesis firehose runs on a single EC2 instance, this requires a large instance when big data comes to perspective - hence higher costs and slow processing, alternatively auto-scaling or distributed computing framework such as Apache Spark on EMR platform can be used for data preprocessing.
+## Limitations and Scaling Options
+-  The python program used to preprocess data before pushing to kinesis firehose runs on a single EC2 instance, this requires a large instance when big data comes to perspective. Big data processing on a single-instance architecture will have implications on costs and processing, alternatively auto-scaling or distributed computing framework such as Apache Spark on EMR platform can be used for data preprocessing.
 
 ## Assumptions
 1. Region Data is static and is stored in S3 location **_Data/Region_**
