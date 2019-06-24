@@ -8,7 +8,7 @@ This is a cloud-based data streaming solution for multi-region sales data.
 ## Prerequisites
 1. Access to Amazon Web Services (AWS) Cloud Computing Services.
 2. Access to Amazon Scalable Storage Service (S3).
-   - Create S3 bucket called "Data" with the following folder structure:<br/>
+   - Create S3 bucket called **_Data_** with the following folder structure:<br/>
    ![Image of S3 processed data bucket](https://github.com/lloydtawanda/RegionSalesDataStreaming/blob/master/s3_folder_structure.png)
    - Create S3 bucket called **_Streaming_** to store data streams
    - Create S3 sub-folders in **_Streaming_** bucket, called **_processed_** and **_backup_**
