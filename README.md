@@ -3,7 +3,7 @@
 This is a cloud-based data streaming solution for multi-region sales data.
 
 ## Architecture Diagram
-![Image of Architecture design](https://github.com/lloydtawanda/RegionSalesDataStreaming/blob/master/architecture.png?raw=true)
+![Image of Architecture design](https://github.com/lloydtawanda/RegionSalesDataStreaming/blob/master/SalesStreamingArchitecture.png?raw=true)
 
 ## Prerequisites
 1. Access to Amazon Web Services (AWS) Cloud Computing Services.
