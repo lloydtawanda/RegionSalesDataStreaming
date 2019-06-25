@@ -24,7 +24,7 @@ spark = glueContext.spark_session
 job = Job(glueContext)
 job.init(args['JOB_NAME'], args)
 
-# Contenate sales data
+# Concatenate sales data
 sales_df = spark.read.parquet("s3://{}/{}/*/*/*/*".format(S3_BUCKET_RAW, S3_PREFIX_RAW)
 
 
