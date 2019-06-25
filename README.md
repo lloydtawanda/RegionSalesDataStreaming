@@ -37,7 +37,7 @@ This is a cloud-based data streaming solution for multi-region sales data.
    - Set **Tags** (Optional)
    - Create IAM role with access S3 bucket where data streams will be stored, and Glue and Kinesis service role access
    - Assign IAM role to delivery stream
-5. Access to AWS Lambda Sevice.
+5. Access to AWS Lambda Service.
    - Create Lambda function called **_invoke_glue_etl_**
    - Set **Runtime** to Python 3.7 
    - Assign IAM role with access to Lambda Invoke Service and Glue Service access
