@@ -47,6 +47,7 @@ This is a cloud-based data streaming solution for multi-region sales data.
    - Start EC2 instance using AWS Linux AMI
    - Assign IAM role to access kinesis firehose service
    - Install or update python 3
+   - Install pandas using pip package manager
    - Create python file called called **_push_data.py_**
    - Copy and paste code in _/PopulateKinesisFirehose/push_data.py_ to the file
 
