@@ -37,7 +37,7 @@ datasink0 = glueContext.write_dynamic_frame.from_options(frame = enriched_dyf , 
 
 
 # Total sales amount per region and network and save as output 
-total_sales_df = sales_df.groupBy("Region", "Network").agg(sum("Amount"))
+total_sales_df = sales_df.groupBy("Region", "Network").agg({'Amount':'sum'})
 # Save Total sales to output S3 folder
 total_sales_dyf = DynamicFrame.fromDF(total_sales_df, glueContext, "total_sales_dyf")
 datasink1 = glueContext.write_dynamic_frame.from_options(frame = total_sales_dyf , connection_type = "s3", connection_options = {"path": "s3://{}/{}/".format(S3_BUCKET_DATA, S3_PREFIX_OUTPUT),"partitionKeys": ["Region"]}, format = "parquet", transformation_ctx = "datasink1")
